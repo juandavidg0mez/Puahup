@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+.menu {
+    display: flex;
+    gap: 15px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover {
+    background-color: #555;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+.title-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+}
+.gallery-item {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Ajusta la altura según el diseño */
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover img {
+    opacity: 0;
+}
+.gallery-item .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    opacity: 0; /* Oculta el texto inicialmente */
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover .text-content {
+    opacity: 1; /* Muestra el texto al pasar el mouse */
+}
+.gallery-item h3, .gallery-item p {
+    margin: 0;
+    color: #fff;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* footer */
+
+/* Contenedor de la galería */
+.info-container {
+    display: flex;
+    flex-direction: row; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    gap: 16px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra los elementos en el contenedor */
+}
+
+.info-item {
+    flex: 0 0 auto; /* Evita que los elementos se estiren */
+    width: 300px; /* Ajusta el ancho de los elementos según tus necesidades */
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #333333;
+    text-align: center;
+}
+
+.info-item h3 {
+    color: #fff;
+}
+/* Elementos individuales de la galería */
+
+@media (max-width: 1200px) {
+    .info-container > div {
+        flex: 1 1 calc(50% - 32px); /* Dos elementos por fila en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .info-container > div {
+        flex: 1 1 100%; /* Un elemento por fila en pantallas más pequeñas */
+    }
+}
+
+/* seccion de titulo */
+
+.title-section {
+    background-image: url('IMG/background-8691370_1280.png');
+    background-size: cover; 
+    background-position: center; 
+    height: 70vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.title-section h1 {
+    margin: 0; 
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem; 
+}

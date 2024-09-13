@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "title": "Manga Literario",
+            "description": "",
+            "imgUrl": "IMG/panel_2.jpeg"
+        },
+        {
+            "title": "Playa Tropical",
+            "description": "My Hero Academia es un manga escrito e ilustrado por Kōhei Horikoshi. Se basa en un one-shot realizado por el mismo autor y publicado en el quinto volumen del manga Ōmagadoki Dōbutsuen bajo el nombre de My Hero.​​ ",
+            "imgUrl": "IMG/panel_3.jpeg"
+        },
+        {
+            "title": "Anime Girl",
+            "description": "Acaso no lo viste venir.",
+            "imgUrl": "IMG/panel_1.jpeg"
+        },
+        {
+            "title": "The Vinland Sagas",
+            "description": "The Vinland Sagas are two Icelandic texts written independently of each other in the early 13th century—The Saga of the Greenlanders (Grænlendinga Saga) and The Saga of Erik the Red (Eiríks Saga Rauða). The sagas were written down between 1220 and 1280 and describe events occurring around 970–1030.",
+            "imgUrl": "IMG/no_Enuimies.jpeg"
+        },
+        {
+            "title": "The Vinland Sagas Family",
+            "description": "Familia de thorfin",
+            "imgUrl": "IMG/vinlangFamily.jpeg"
+        }
+
+    ]
+}
